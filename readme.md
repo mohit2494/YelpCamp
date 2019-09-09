@@ -1,6 +1,6 @@
 # YelpCamp
 ----
-A RESTful node web app which shows information about latest web camps across several locations. 
+A RESTful node web app which shows information about camping grounds across several locations. A user can create his profile, register for camps and comment on camp information.
 
 ### steps of building the web application
 ---- 
