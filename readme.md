@@ -1,4 +1,9 @@
-#YelpCamp
+# YelpCamp
+----
+A RESTful node web app which shows information about latest web camps across several locations. 
+
+### steps of building the web application
+---- 
 * Add a landing page
 * Add Campgrounds page that lists all campgrounds
 
@@ -6,31 +11,31 @@
 * Name
 * Image
 
-#Layout and Basic Styling
+#### Layout and Basic Styling
 * Create our header and footer partials
 * Add in Bootstrap for styling
 
-#Creating New Campgrounds
+#### Creating New Campgrounds
 * Setup new campground POST route
 * Add in body-parser
 * Setup route to show form
 * Add basic unstyled form
 
-#Style the campgrounds page
+#### Style the campgrounds page
 * Add a better header/title
 * Make campgrounds display in a grid
 
-#Style the navbar and Form
+#### Style the navbar and Form
 * Add a navbar to all templates
 * Style the new campground form
 
-#Databases
+#### Databases
 * SQL Databases (relational)
-     * A collection of information/data
+* A collection of information/data
 * NoSQL Databases (non-relational)
-     * Has an interface
+* Has an interface
 
-#Our First Mongo Commands
+#### Our First Mongo Commands
 * mongod
 * mongo
 * help
@@ -41,20 +46,20 @@
 * update
 * remove
 
-#Mongoose
+#### Mongoose
 * What is Mongoose?
 * Installing and configuring Mongoose
 * Setup Campground Model
 * Use Campground Model inside of our routes
 
-#Show Page
+#### Show Page
 * Review the RESTful routes we've seen so far
 * Add description to our campground model
 * Show db.collection.drop()
 * Add a show route template
 
  
-# RESTFUL Routes
+#### RESTFUL Routes
 URL	                    HTTP Verb	Action
 /photos/	               GET	index
 /photos/new	          GET	new
@@ -64,50 +69,50 @@ URL	                    HTTP Verb	Action
 /photos/:id	          PATCH/PUT	update
 /photos/:id	          DELETE	destroy
 
-# Introduction to restful routes
+#### Introduction to restful routes
 * Define rest and why it matters
 * List all 7 RESTful Routes
 * Show example of RESTful routing in practice
-*REST - a mapping between HTTP routes and CRUD
-*REST- Representational State Transfer
+* REST - a mapping between HTTP routes and CRUD
+* REST- Representational State Transfer
 
-# Associations
-*Discuss associations
-*Discuss -> one:one ; one:many ; many:one ; many:many
-*User
-*Post
-*Photos
-*Albums
-*Connect
+#### Associations
+* Discuss associations
+* Discuss -> one:one ; one:many ; many:one ; many:many
+* User
+* Post
+* Photos
+* Albums
+* Connect
 
-# Embedding data
-*User
-*Post
+#### Embedding data
+* User
+* Post
 
-# Referencing data
+#### Referencing data
 
-# Module.Exports
+#### Module.Exports
 * Introduce module.exports
 * Put the Model files in a separate directory
 * We can require the model files, in the model files
 
-# Refactor Mongoose Code
+#### Refactor Mongoose Code
 * Refactor App.js
 * Create a models directory
 * Use module.exports
 * Require everything correctly!
 
-# Add a seeds file
+#### Add a seeds file
 * Add a seed.js file
 * Run the seeds file every time the server starts
 * Helps seed dummy data to help us work with something
 
 
-# Add the Comment model!
+#### Add the Comment model!
 * Make our erros go away
 * Display comments on campground show page
 
-# Comment New/Create
+#### Comment New/Create
 * Discuss nested routes
 * Add the comment new and create routes
 * Add the new comment form
@@ -117,15 +122,15 @@ INDEX   /dogs/new
 NEW     /dogs
 CREATE  /dogs/:id
 
-# COMMENT ROUTES
+#### COMMENT ROUTES
 NEW campground/:id/comments/new GET
 CREATE campgrounds/:id/comments POST
 
-#Styling Show Page
+#### Styling Show Page
 * Add a sidebar
 * Display comments nicely
 
-# Intro to authentication
+#### Intro to authentication
 * What tools are we using?
     * Passport
     * Passport Local
@@ -147,61 +152,61 @@ CREATE campgrounds/:id/comments POST
 
 <!-- STARTING AUTHORISATION OF YELPCAMP -->
 
-## Add user model
+#### Add user model
 * Install all packages needed for auth
 * Define user model
 
-## Auth Pt.2 - Register
+#### Auth Pt.2 - Register
 * Configure Passport
 * Add register routes
 * Add register template
 
-# Auth Pt.3 - Login
+#### Auth Pt.3 - Login
 * Add login routes
 * Add login template
 
-# Auth Pt.4 - Logout/Navbar
+#### Auth Pt.4 - Logout/Navbar
 * Add logout Route
 * Prevent user from adding a comment if not signed in
 * Add links to navbar
 * Show/hide auth links correctly
 
-# Refactor the routes
+#### Refactor the routes
 * Use express routes to re-organize all routes
 
-## Users + Comments
+#### Users + Comments
 * Associate Users and Comments
 * Save author's name to a comment automatically
 
-## Users + Campgrounds
+#### Users + Campgrounds
 * Prevent an unauthenticated user from creating a campground
 * Save username + id to newly created campground
 
-# Editing Campgrounds
+#### Editing Campgrounds
 * Add Method-Override
 * Add Edit Route for Campgrounds
 * Add Link to Edit Page
 * Add Update Route
 
-# Deleting Campgrounds
+#### Deleting Campgrounds
 * Add Destroy Route
 * Add Delete Button
 
-# Authorization
+#### Authorization
 * User can only edit his/her campgrounds
 * User can only delete his/her campgrounds
 * Hide/Show edit and delete buttons
 
-# Editing Comments
+#### Editing Comments
 * Add Edit Route for comments
 * Add Edit Button
 * Add Update Route
 
-# Deleting Comments
+#### Deleting Comments
 * Add Destroy Route
 * Add Delete Button
 
-# Authorization Part 2: Comments
+#### Authorization Part 2: Comments
 * User can only edit his/her comments
 * User can only delete his/her comments
 * Hide/Show edit and delete buttons
